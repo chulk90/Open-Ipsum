@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+		title= title
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+		link(rel='stylesheet', href='/stylesheets/normalize.min.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		.container
+			.col-md-2.hidden-sm.hidden-xs
+				ul.side-nav
+					li: a(href="/") Logo
+					li: a(href="/") Open Ipsum
+					li: input(class="width-constrain", type="text", placeholder="search it")
+					li: a(href="/") Create
+					li: a(href="/") Browse
+					li: hr
+					li: a(href="/") Login x Signup
+					li: a(href="/") About
+					li: a(href="/") Developers
+			block content

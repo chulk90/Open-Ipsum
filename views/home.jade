@@ -1,0 +1,15 @@
+extends layout
+block content		
+	.col-md-10.align-top
+		.header
+			h1.align-top Browse
+		.row
+			.sub-head
+				h4 Favorites
+				i.fa.fa-star
+			each item in generators
+				.col-md-4
+					a(href="/ipsums/#{item._id}")
+						.browse
+							h3 #{item.name}
+							p #{item.words}

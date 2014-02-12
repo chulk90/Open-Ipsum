@@ -1,0 +1,7 @@
+extends layout
+block content
+	h1 Are you sure you want to delete #{generators}?
+	p It will be gone forever!
+	form(action="/ipsums/#{generators}", method="POST")
+		input(type="Submit", value= "yes siree")
+		input(type='hidden', name='_method', value='DELETE')

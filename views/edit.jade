@@ -1,0 +1,8 @@
+extends layout
+block content
+	h1 Edit #{generators.title}?
+	form(action="/ipsums/#{generators.title}", method="POST")
+		input(name="title", type="text", value="#{generators.title}")
+		input(name="words", type="text", value= "#{generators.words}")
+		input(type="Submit", value="Submit")
+		input(type='hidden', name='_method', value='PUT')

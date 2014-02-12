@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	script(type="text/javascript", src="javascripts/tags.min.js")
+	.col-md-10
+		.header
+			input(class="ipsum", type="text", placeholder="New Ipsum", required, autofocus)
+			.tool-bar
+				ul.options
+					li: a(href=""): i.fa.fa-pencil.availible
+					li: i.fa.fa-refresh
+					li: i.fa.fa-paperclip
+					li: i.fa.fa-code
+					li: i.fa.fa-code-fork
+				ul.options-save
+					li: a(href=""): i.fa.fa-check-circle.save-availible
+					li: i.fa.fa-times-circle.save
+		.content-border-left
+			textarea(id="inputWords", class="inputWords", cols="150", rows="14", placeholder="Bacon, is, good")
+			script(type="text/javascript")
+				|$('#inputWords').tagsInput();

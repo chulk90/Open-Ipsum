@@ -1,0 +1,11 @@
+extends layout
+block content
+	h1 All of the ipsums
+	ul
+		li: a(href="/create") Create an Ipsum
+		each ipsum in generators
+			li #{ipsum.title}
+			li #{ipsum.words}
+			li: a(href="/ipsums/#{ipsum.title}") View
+			li: a(href="/ipsums/#{ipsum.title}/edit") Edit
+			li: a(href="/ipsums/#{ipsum.title}/delete") Delete this bitch

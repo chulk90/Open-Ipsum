@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title= title
+		link(rel="stylesheet", type="text/css", href="stylesheets/tags.css")
+		link(rel="stylesheet", type="text/css", href="/components/font-awesome/css/font-awesome.css")
+		link(rel="stylesheet", href="/components/foundation/css/normalize.css")
+		link(rel="stylesheet", href="/stylesheets/bootstrap.css")
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(type="text/javascript", src="javascripts/jquery.min.js")
+	body
+		.container
+			.row
+				.col-md-2.sidebar.hidden-sm.hidden-xs
+					ul.side-nav
+						li: a(href="/"): img(src="images/logo.png", alt="")
+						li: input(type="text", id="search-input", placeholder="search it")
+						li: a(href="/create")  Create
+						li: a(href="/ipsums")  Browse
+						li <hr>
+						li: a(href="#auth") Authenticate
+						li: a(href="/about")  About
+						li: a(href="/dev")  Developers
+				block content

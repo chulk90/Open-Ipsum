@@ -1,0 +1,6 @@
+extends layout
+block content
+	form(id="create", method="POST", action="/ipsums")
+		input(name="name", type="text", placeholder="name of ipsum")
+		input(name="words", type="text", placeholder="words")
+		input(type="submit",value="Submit")
