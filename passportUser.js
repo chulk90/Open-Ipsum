@@ -6,8 +6,8 @@ var User = require('./UserModel');
 
 
 module.exports = function(passport){
-	var TWITTER_CONSUMER_KEY ='dqVee1OBCsIAehykbAXw';
-	var TWITTER_CONSUMER_SECRET = 'APqVCeiPCNg4DlBW5nCGDRWwSG4usjPyH7rS4oT80';
+	var TWITTER_CONSUMER_KEY ='---';
+	var TWITTER_CONSUMER_SECRET = '---';
 
 
 	passport.serializeUser(function(user, done) {
